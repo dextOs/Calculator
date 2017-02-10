@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dextos.xavier.R2D2.activity_login">
+
+    <TextView
+        android:text="@string/intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txt_intro"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:hint="@string/user"
+        android:ems="10"
+        android:id="@+id/etxt_user"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/pass"
+        android:ems="10"
+        android:id="@+id/etxt_pass"
+        android:layout_weight="1"
+        android:inputType="textPassword" />
+
+    <Button
+        android:text="@string/enter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_log"
+        android:layout_weight="1"
+        android:background="@android:color/holo_green_light" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitter_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></com.twitter.sdk.android.core.identity.TwitterLoginButton>
+
+        <Button
+            android:text="@string/regist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_reg"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light" />
+    </LinearLayout>
+
+</LinearLayout>

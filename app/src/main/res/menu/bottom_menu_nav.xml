@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_face_black_24dp"/>
+    <item
+        android:id="@+id/action_calc"
+        android:title="@string/calculator"
+        android:icon="@drawable/ic_calculator"/>
+    <item
+        android:id="@+id/action_music"
+        android:title="@string/music"
+        android:icon="@drawable/ic_library_music_black_24dp"/>
+    <item
+        android:id="@+id/action_memory"
+        android:title="@string/memory"
+        android:icon="@drawable/ic_card"/>
+    <item
+        android:id="@+id/action_rank"
+        android:title="@string/Ranking"
+        android:icon="@drawable/ic_format_list_numbered_black_24dp"/>
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/gmit_notif"
+        android:enabled="true">
+    <item android:title="@string/toast"
+        android:id="@+id/mit_toast" />
+    <item android:title="@string/State"
+        android:id="@+id/mit_state" />
+    </group>
+    <item
+        android:id="@+id/mit_logout"
+        android:icon="@drawable/ic_cancel_black_24dp"
+        android:title="@string/log_out"
+        app:showAsAction="always" />
+    <item android:title="@string/dial_list"
+        android:id="@+id/mit_call"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_call_black_24dp" />
+    <item android:title="@string/navigation"
+        android:id="@+id/mit_nav"
+        android:icon="@drawable/ic_public_black_24dp"
+        app:showAsAction="always" />
+</menu>

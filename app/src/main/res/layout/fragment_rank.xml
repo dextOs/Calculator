@@ -1,0 +1,14 @@
+<RelativeLayout
+    tools:context="com.dextos.xavier.R2D2.fragments.fragment_rank"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:background="#ffffff"
+            android:id="@+id/mRecyclerView" android:layout_gravity="center_horizontal|top"
+            />
+    </RelativeLayout>

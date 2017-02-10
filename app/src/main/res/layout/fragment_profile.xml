@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dextos.xavier.R2D2.fragments.fragment_profile"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/linlay_avatar">
+
+            <ImageView
+                android:src="@drawable/ic_face_black_24dp"
+                android:id="@+id/imgvw_avatar"
+                android:layout_weight="1"
+                android:background="@color/tw__blue_default"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:maxWidth="270dp"
+                android:maxHeight="175dp"
+                android:minHeight="100dp"
+                android:minWidth="200dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="@string/avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_avatar"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text="@string/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_name"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="@string/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_user"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="@string/hiscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_hiscore"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="@string/whereare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_where"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:gravity="top|center_vertical"
+                    android:foregroundGravity="top" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_gps"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_public_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <Button
+                android:text="@string/log_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_logout"
+                android:background="@android:color/holo_red_dark"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="@string/regist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_regist"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
